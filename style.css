@@ -483,63 +483,76 @@ a{
     background-image: url(./images/projects/Project4.png);
 }
 
-@media (max-width:1300px)
-{
-    .page-header{
-        padding-top:30px;
-        color: var(--bgOrange);
-        text-align: center;
-        font-size: 40px;
-    }
-    .page-container{
-        padding: 5px;
-        margin: 10px;
-        gap: 60px;
-    }
-    .project-card{
-        width: 100%;
-        height: 300%;
-    }
-    .project-card{
-        background-size: cover;
-        background-position: center;
-    }
-    .project-content{
-        scale: 0.5;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0;     
-    }
-    .project-content-left{
-        left: 0;
-    }
-    .project-heading{
-        width: 100%;
-        font-size: 40px;
-    }
-    .project-subHeading{
-        width: 100%;
-    }
-    #project2{
-        margin-left: 0;
-    }
-    #project4{
-        margin-left: 0;
-    }
-    .project-skills-container{
-        width: 100%;
-    }
-    .project-skill{
-        width: 35px;
-    }
-    .project-card:hover .project-number{
-        display: none;
-    }
-    .project-card:hover .project-content{
-        scale: 0.55;
-    }
-} 
+
+@media (max-width: 1300px) {
+
+ 
+  .page-header {
+    padding-top: 30px;
+    color: var(--bgOrange);
+    text-align: center;
+    font-size: 40px;
+  }
+
+  
+  .project-container {
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
+    gap: 60px;
+  }
+
+  
+  .project-card {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .project-content {
+    position: relative;
+    transform: none;
+    scale: 1;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    top: auto;
+    padding: 1.5rem;
+  }
+
+  .project-heading {
+    width: 100%;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .project-subHeading {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #project2,
+  #project4 {
+    margin-left: 0;
+  }
+
+  
+  .project-skills-container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .project-skill {
+    width: 35px;
+  }
+
+  .project-card:hover .project-content {
+    transform: none;
+  }
+}
+
 
 .skills-container{
     position: relative;
